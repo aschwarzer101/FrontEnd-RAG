@@ -18,9 +18,6 @@ import {
   useState,
 } from "react";
 import { useNavigate } from "react-router-dom";
-import SpeechRecognition, {
-  useSpeechRecognition,
-} from "react-speech-recognition";
 import TextareaAutosize from "react-textarea-autosize";
 import { ReadyState } from "react-use-websocket";
 import { ApiClient } from "../../common/api-client/api-client";
@@ -74,11 +71,11 @@ export abstract class ChatScrollState {
 }
 
 const workspaceDefaultOptions: SelectProps.Option[] = [
-  {
-    label: "No workspace (RAG data source)",
-    value: "",
-    iconName: "close",
-  },
+  // {
+  //   label: "No workspace (RAG data source)",
+  //   value: "",
+  //   iconName: "close",
+  // },
   {
     label: "Create new workspace",
     value: "__create__",
@@ -89,8 +86,6 @@ const workspaceDefaultOptions: SelectProps.Option[] = [
 export default function ChatInputPanel(props: ChatInputPanelProps) {
   const appContext = useContext(AppContext);
   const navigate = useNavigate();
-  const { transcript, listening, browserSupportsSpeechRecognition } =
-    useSpeechRecognition();
   const [state, setState] = useState<ChatInputState>({
     value: "",
     selectedModel: null,
