@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@cloudscape-design/global-styles": "^1.0.27",
+    "aws-amplify": "^6.0.27"
+  }
+}
