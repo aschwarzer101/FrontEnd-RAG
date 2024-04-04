@@ -5,8 +5,8 @@
     "aws-genai-llm-chatbot": "bin/aws-genai-llm-chatbot.js"
   },
   "scripts": {
-    "build": "npx @aws-amplify/cli codegen && npx tsc",
-    "watch": "npx tsc -w",
+    "build": "npx @aws-amplify/cli codegen && tsc",
+    "watch": "tsc -w",
     "cdk": "cdk",
     "gen": "npx @aws-amplify/cli codegen",
     "create": "node ./cli/magic.js config",
@@ -28,16 +28,13 @@
     "@types/aws-lambda": "^8.10.125",
     "@types/country-list": "^2.1.4",
     "@types/node": "20.1.7",
-    "@types/react": "^17.0.00",
-    "@types/react-dom": "^17.0.00",
-    "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "aws-cdk": "2.126.0",
     "eslint": "^8.45.0",
     "graphql": "^16.8.1",
     "prettier": "^3.0.3",
-    "ts-node": "^10.9.1",
+    "ts-node": "^10.9.2",
     "typescript": "~5.1.3",
     "vitepress": "^1.0.0-rc.24"
   },
@@ -47,7 +44,8 @@
     "@aws-cdk/aws-apigatewayv2-integrations-alpha": "^2.114.1-alpha.0",
     "@aws-cdk/aws-cognito-identitypool-alpha": "^2.114.1-alpha.0",
     "@cdklabs/generative-ai-cdk-constructs": "^0.1.50",
-    "@cloudscape-design/components": "^3.0.594",
+    "@cloudscape-design/components": "github:cloudscape-design/components",
+    "@cloudscape-design/global-styles": "^1.0.26",
     "aws-cdk-lib": "2.126.0",
     "cdk-nag": "2.27.170",
     "commander": "^11.0.0",
@@ -55,7 +53,7 @@
     "country-list": "^2.3.0",
     "enquirer": "^2.4.1",
     "moment-timezone": "^0.5.45",
-    "react": "^17.0.0",
+    "react": "^18.2.0",
     "source-map-support": "^0.5.21"
   },
   "optionalDependencies": {
