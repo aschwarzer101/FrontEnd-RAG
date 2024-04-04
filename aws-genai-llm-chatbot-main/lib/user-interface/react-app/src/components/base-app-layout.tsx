@@ -13,11 +13,11 @@ export default function BaseAppLayout(
   return (
     <AppLayout
       headerSelector="#awsui-top-navigation"
-      navigation={<NavigationPanel />}
-      navigationOpen={!navigationPanelState.collapsed}
-      onNavigationChange={({ detail }) =>
-        setNavigationPanelState({ collapsed: !detail.open })
-      }
+      // navigation={<NavigationPanel />}
+      // navigationOpen={!navigationPanelState.collapsed}
+      // onNavigationChange={({ detail }) =>
+      //   setNavigationPanelState({ collapsed: !detail.open })
+      // }
       toolsHide={props.info === undefined ? true : false}
       tools={props.info}
       toolsOpen={toolsOpen}
