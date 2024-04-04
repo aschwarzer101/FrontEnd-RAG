@@ -10,12 +10,12 @@ import { AppContext } from "./common/app-context";
 import GlobalHeader from "./components/global-header";
 import Playground from "./pages/chatbot/playground/playground";
 import NotFound from "./pages/not-found";
-import AddData from "./pages/rag/add-data/add-data";
-import CreateWorkspace from "./pages/rag/create-workspace/create-workspace";
-import Dashboard from "./pages/rag/dashboard/dashboard";
-import RssFeed from "./pages/rag/workspace/rss-feed";
-import WorkspacePane from "./pages/rag/workspace/workspace";
-import Workspaces from "./pages/rag/workspaces/workspaces";
+// import AddData from "./pages/rag/add-data/add-data";
+// import CreateWorkspace from "./pages/rag/create-workspace/create-workspace";
+// import Dashboard from "./pages/rag/dashboard/dashboard";
+// import RssFeed from "./pages/rag/workspace/rss-feed";
+// import WorkspacePane from "./pages/rag/workspace/workspace";
+// import Workspaces from "./pages/rag/workspaces/workspaces";
 import "./styles/app.scss";
 // import SessionPage from "./pages/chatbot/sessions/sessions";
 
@@ -36,7 +36,7 @@ function App() {
               <Route path="playground/:sessionId" element={<Playground />} />
               {/* <Route path="sessions" element={<SessionPage />} /> if we want history*/}
             </Route>
-            <Route path="/rag" element={<Outlet />}>
+            {/* <Route path="/rag" element={<Outlet />}>
               <Route path="" element={<Dashboard />} />
               <Route path="workspaces" element={<Workspaces />} />
               <Route path="workspaces/create" element={<CreateWorkspace />} />
@@ -49,7 +49,7 @@ function App() {
                 element={<RssFeed />}
               />
               <Route path="workspaces/add-data" element={<AddData />} />
-            </Route>
+            </Route> */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

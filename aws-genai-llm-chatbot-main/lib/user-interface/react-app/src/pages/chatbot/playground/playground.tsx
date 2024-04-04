@@ -14,7 +14,7 @@ export default function Playground() {
           <p>
             This chat playground allows user to interact with a chosen LLM and
             optional RAG retriever. You can create new RAG workspaces via the{" "}
-            <Link to="/rag/workspaces">Workspaces</Link> console.
+            console.
           </p>
           <h3>Settings</h3>
           <p>
