@@ -1,13 +1,11 @@
 import { AppLayout, AppLayoutProps } from "@cloudscape-design/components";
-import { useNavigationPanelState } from "../common/hooks/use-navigation-panel-state";
-import NavigationPanel from "./navigation-panel";
 import { ReactElement, useState } from "react";
 
 export default function BaseAppLayout(
   props: AppLayoutProps & { info?: ReactElement }
 ) {
-  const [navigationPanelState, setNavigationPanelState] =
-    useNavigationPanelState();
+  // const [navigationPanelState, setNavigationPanelState] =
+  //   useNavigationPanelState();
   const [toolsOpen, setToolsOpen] = useState(false);
 
   return (
